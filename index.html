@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch-Pad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class = "header">
+        Sketch book
+    </div>
+    <div class = "paint-container">
+        <div class = "console-panel">
+            <div class = "buttons-container">
+                <button id="bt-erase">Erase</button>
+                <button id="bt-grid">Resize</button>
+            </div>
+            <div class = "console-picker">
+                <label for="colorpicker">Choose your color: </label>
+                <input type="color" id="colorpicker" value="#000000">
+            </div>
+        </div>
+        <div id ="grid-container"></div>
+    </div>
+    <div class="footer">
+        Delgado 2023
+      </div>
+</body>
+
+<script src="./javascript.js"></script>
+<script>
+    createGrid(16);
+    changeColor();
+</script>
+</html>
